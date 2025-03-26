@@ -1,0 +1,56 @@
+/* src/components/Charts/Charts.css */
+.chart-container {
+    flex: 2;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .chart-header h3 {
+    color: #2c3e50;
+  }
+  
+  .chart-header select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+  }
+  
+  .chart {
+    display: flex;
+    height: 250px;
+    align-items: flex-end;
+    gap: 30px;
+    padding-top: 20px;
+  }
+  
+  .chart-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+  }
+  
+  .chart-bar {
+    width: 30px;
+    background-color: rgba(52, 152, 219, 0.5);
+    border-radius: 5px 5px 0 0;
+    transition: height 0.3s ease;
+    position: relative;
+  }
+  
+  .chart-bar-container span {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #7f8c8d;
+  }
