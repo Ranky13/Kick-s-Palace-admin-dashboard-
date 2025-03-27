@@ -1,0 +1,34 @@
+/* Dashboard Layout */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .data-section {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .bottom-section {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .bottom-left, .bottom-right {
+    flex: 1; /* Makes both columns equal width */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .data-section {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .bottom-section {
+      flex-direction: column;
+    }
+  }

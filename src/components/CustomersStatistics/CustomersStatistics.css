@@ -1,0 +1,29 @@
+.Customers-statistics {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.Customers-statistics h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.Customers-statistics ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.Customers-statistics ul li {
+    margin: 8px 0;
+}
+
+.Customers-statistics canvas {
+    max-width: 100%;
+    height: auto !important;
+}

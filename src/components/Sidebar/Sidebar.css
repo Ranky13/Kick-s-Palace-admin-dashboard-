@@ -1,6 +1,6 @@
 .sidebar {
     width: 250px;
-    background-color: #2f3640;
+    background-color: #ffff;
     color: white;
     min-height: 100vh;
     transition: all 0.3s;
@@ -10,16 +10,25 @@
     padding: 20px;
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
   }
-  
+  .logo img{
+    width: 40px;
+    height: 40px;
+  }
   .logo h2 {
-    color: #fff;
+    color: #3ad83a;
     font-size: 24px;
   }
-  
+  .menu {
+    margin-top: 40px;
+  }
   .menu ul {
     list-style: none;
     padding: 0;
+  }
+  .menu ul li a:hover{
+    color: white;
   }
   
   .menu li {
@@ -28,14 +37,15 @@
   }
   
   .menu li:hover {
-    background-color: #414b5a;
+    background-color: #3ad83a;
+    color: white;
   }
   
   .menu li.active {
     background-color: #3498db;
   }
   .menu a {
-    color: white;
+    color: #3ad83a;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -46,6 +56,9 @@
   .menu i {
     width: 20px;
     text-align: center;
+  }
+  .menu i:hover{
+    color: white;
   }
   
   @media (max-width: 768px) {
