@@ -16,10 +16,16 @@
     gap: 20px;
   }
   
-  .bottom-left, .bottom-right {
-    flex: 1; /* Makes both columns equal width */
+  .bottom-1, .bottom-2 {
+    flex: 1; 
   }
-  
+  .middle-row{
+    display: flex;
+    gap: 20px;
+  }
+  .middle-row-1, .middle-row-2{
+    flex: 1;
+  }
   /* Responsive adjustments */
   @media (max-width: 1200px) {
     .data-section {

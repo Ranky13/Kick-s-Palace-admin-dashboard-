@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-left">
-        <h1>Dashboard</h1>
+        <h1>Admin Dashboard</h1>
       </div>
       <div className="header-right">
         <div className="search-box">
@@ -15,9 +15,11 @@ function Header() {
           </button>
         </div>
         <div className="user-profile">
+          <div className="Avatar">
           <img src="https://via.placeholder.com/40" alt="User" />
+          </div>
           <span>Admin</span>
-        </div>
+        </div> 
       </div>
     </header>
   );

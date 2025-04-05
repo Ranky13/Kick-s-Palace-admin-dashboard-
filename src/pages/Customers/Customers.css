@@ -1,0 +1,41 @@
+
+.customers-page{
+    flex: 2;
+    padding: 10px;
+}
+.customer-navbar{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+.customer-navbar h2{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+  .customer-navbar input{
+    flex: 2;
+    width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: white;
+  }
+.customer-navbar input:focus{
+    outline: none;
+}
+.Add-customer button{
+    background:  #3ad83a;
+    padding: 15px;
+    width: 200px;
+    flex: 1;
+    border: none;
+    font-weight: 700;
+    color: white;
+    border-radius: 10px;
+}
+.Add-customer button:hover{
+    transform: scale(1.1);
+}

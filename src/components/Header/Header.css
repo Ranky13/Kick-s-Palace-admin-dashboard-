@@ -3,13 +3,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
   }
   
   .header-left h1 {
     font-size: 24px;
-    color: #333;
+    color: #3ad83a;
   }
   
   .header-right {
@@ -45,7 +46,14 @@
     align-items: center;
     gap: 10px;
   }
+  .Avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #3ad83a;
+  }
   
-  .user-profile img {
+  .Avatar img {
     border-radius: 50%;
   }
+ 

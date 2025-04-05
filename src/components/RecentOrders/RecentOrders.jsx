@@ -7,7 +7,8 @@ function RecentOrders() {
     { id: '#ORD-002', customer: 'Jane Smith', date: '2023-05-02', amount: '$85', status: 'Processing' },
     { id: '#ORD-003', customer: 'Robert Johnson', date: '2023-05-03', amount: '$230', status: 'Completed' },
     { id: '#ORD-004', customer: 'Emily Davis', date: '2023-05-03', amount: '$65', status: 'Pending' },
-    { id: '#ORD-005', customer: 'Michael Wilson', date: '2023-05-04', amount: '$150', status: 'Completed' }
+    { id: '#ORD-005', customer: 'Michael Wilson', date: '2023-05-04', amount: '$150', status: 'Completed' },
+    { id: '#ORD-006', customer: 'John Douglas', date: '2023-04-05', amount: '$250', status: 'Failed' },
   ];
 
   const getStatusClass = (status) => {
@@ -15,6 +16,7 @@ function RecentOrders() {
       case 'Completed': return 'status-completed';
       case 'Processing': return 'status-processing';
       case 'Pending': return 'status-pending';
+      case 'Failed': return 'status-failed';
       default: return '';
     }
   };

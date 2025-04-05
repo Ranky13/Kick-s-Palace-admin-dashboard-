@@ -1,5 +1,5 @@
 .Customers-statistics {
-    background: rgba(255, 255, 255, 0.2);
+    background: white;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
@@ -9,7 +9,7 @@
 
 .Customers-statistics h2 {
     margin-bottom: 15px;
-    color: #333;
+    color: #61db61;    
     font-size: 1.5rem;
 }
 

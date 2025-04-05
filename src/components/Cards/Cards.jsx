@@ -6,7 +6,8 @@ function Cards() {
     { title: "Total Sales", value: "$12,345", change: "+12%", icon: "fas fa-dollar-sign" },
     { title: "Total Orders", value: "1,234", change: "+5%", icon: "fas fa-shopping-cart" },
     { title: "Total Customers", value: "5,678", change: "+8%", icon: "fas fa-users" },
-    { title: "Total Products", value: "1,024", change: "+3%", icon: "fas fa-box" }
+    { title: "Total Products", value: "1,024", change: "+3%", icon: "fas fa-box" },
+    { title: "Curent Orders", value: "93", change: "-9%", icon: "fas fa-box" }
   ];
 
   return (
@@ -25,6 +26,19 @@ function Cards() {
           </div>
         </div>
       ))}
+      <div className="staffs">
+        <div className="staff-icon">
+
+        </div>
+        <div className="staffs-number">
+          <h4>Staffs</h4>
+          <h2>13</h2>
+        </div>
+        <div className="developers-number">
+            <h4>Developers</h4>
+            <h2>5</h2>
+        </div>
+      </div>
     </div>
   );
 }

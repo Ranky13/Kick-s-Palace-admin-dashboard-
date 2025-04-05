@@ -2,6 +2,7 @@ import React from 'react';
 import { Chart, registerables } from 'chart.js';
 import { useEffect, useRef } from 'react';
 import './CustomersStatistics.css';
+import { data } from 'react-router-dom';
 
 
 Chart.register(...registerables);
@@ -21,21 +22,21 @@ const CustomersStatistics = () => {
             
             // Create new chart and store the instance
             chartInstance.current = new Chart(ctx, {
-                type: 'doughnut',
+                type: 'pie',
                 data: {
-                    labels: ['Active', 'Inactive', 'Pending'],
+                    labels: ['Active', 'Inactive', 'Passive'],
                     datasets: [{
                         label: 'Customer Statistics', 
                         data: [300, 50, 100],
                         backgroundColor: [
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(255, 206, 85, 0.2)'    
+                            '#3ad83a',
+                            '#a6e5a6',
+                            '#9aec9a'    
                         ],
                         borderColor: [
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 99, 132, 1)',
-                            'rgba(255, 206, 85, 1)'
+                            'rgb(16, 109, 16)',
+                            'rgb(156, 218, 156)',
+                            'rgb(131, 226, 75)',
                         ],
                         borderWidth: 1
                     }]
@@ -76,7 +77,7 @@ const CustomersStatistics = () => {
                     <span className="inactive">Inactive: 50</span>
                 </li>
                 <li>
-                    <span className="pending">Pending: 100</span>
+                    <span className="pending">Passive: 100</span>
                 </li>
             </ul>
         </div>

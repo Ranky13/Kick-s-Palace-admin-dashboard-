@@ -1,9 +1,13 @@
-// src/components/Sidebar/Sidebar.js
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Sidebar.css';
 
 function Sidebar() {
+  const navigate = useNavigate(); 
+
+  const handleLogout = () => {
+    navigate('/login');
+  };
   return (
     <aside className="sidebar">
       <div className="logo">
@@ -41,8 +45,44 @@ function Sidebar() {
               <span>Discounts</span>
             </Link>
           </li>
+          <li>
+            <Link to="/OrderManagements">
+              <i className="fas fa-tag"></i>
+              <span>Order Managements</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/UserManagements">
+              <i className="fas fa-tag"></i>
+              <span>User Managements</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/Invoice">
+              <i className="fas fa-tag"></i>
+              <span>Invoices</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/Profile">
+              <i className="fas fa-tag"></i>
+              <span>Profile</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/settings">
+              <i className="fas fa-tag"></i>
+              <span>Settings</span>
+            </Link>
+          </li>
         </ul>
       </nav>
+      <div className="logout-container">
+        <button className="logout-btn" onClick={handleLogout}>
+          <i className="fas fa-sign-out-alt"></i>
+          <span>Log Out</span>
+        </button>
+      </div> 
     </aside>
   );
 }

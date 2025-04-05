@@ -1,0 +1,40 @@
+.top-customers{
+    
+background: white;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.top-customers-heading{
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+    text-align: center;
+}
+.top-customers-heading h3{
+    color: #61db61;    
+    margin-bottom: 20px;
+    text-align: center;
+}
+.top-customers-heading p{
+    color: #4189f5;
+    cursor: pointer;
+}
+.customers-info h4{
+    color:#6a6d6e;
+}
+.customers-info p{
+    color: #7f8c8d;
+}
+.TopCustomers-details{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #eee;
+}
+.customers-orders h4{
+    color: #6a6d6e;
+}
+.customers-orders{
+    text-align: center;
+}

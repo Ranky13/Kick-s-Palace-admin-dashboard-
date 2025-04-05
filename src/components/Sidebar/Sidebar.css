@@ -1,65 +1,120 @@
 .sidebar {
-    width: 250px;
-    background-color: #ffff;
-    color: white;
-    min-height: 100vh;
-    transition: all 0.3s;
-  }
-  
-  .logo {
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-  }
-  .logo img{
-    width: 40px;
-    height: 40px;
-  }
-  .logo h2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px; 
+  background-color: #eeeeee;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  overflow-y: auto; 
+  box-shadow: 0 4px 5px grey;
+}
+
+.sidebar-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.logo {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #3ad83a;
+}
+
+.menu {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+.menu ul li:hover{
+  background: #3ad83a;
+  color: white;
+  border-radius: 10px;
+}
+.menu ul li a:hover{
+  color: white;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: #3ad83a;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu li a i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.logout-container {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.logout-container {
+  margin-top: auto;
+  padding: 1rem;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logout-btn i {
+  margin-right: 10px;
+}
+.log-out h3{
     color: #3ad83a;
-    font-size: 24px;
   }
-  .menu {
-    margin-top: 40px;
+  .logout-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
   }
-  .menu ul {
-    list-style: none;
-    padding: 0;
-  }
-  .menu ul li a:hover{
-    color: white;
-  }
-  
-  .menu li {
-    padding: 15px 20px;
-    transition: all 0.3s;
-  }
-  
-  .menu li:hover {
-    background-color: #3ad83a;
-    color: white;
-  }
-  
-  .menu li.active {
-    background-color: #3498db;
-  }
-  .menu a {
-    color: #3ad83a;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    height: 100%;
-  }
-  .menu i {
-    width: 20px;
-    text-align: center;
-  }
-  .menu i:hover{
-    color: white;
-  }
+ 
   
   @media (max-width: 768px) {
     .sidebar {

@@ -1,12 +1,46 @@
-# React + Vite
+# Kick's Palace Admin & Staff E-Commerce Dashboard
+Dashboard Preview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive Admin Dashboard for e-commerce management, built with React.js, Chart.js, and CSS. This dashboard provides an intuitive interface for tracking sales, customers, orders, and product performance.
 
-Currently, two official plugins are available:
+# ✨ Features
+✔ Interactive Charts – Visualize sales, customer statistics, and product performance
+✔ Responsive Design – Works on desktop, tablet, and mobile
+✔ Real-time Data – Dynamic updates for orders and sales
+✔ Modern UI – Clean, professional design with smooth animations
+✔ Modular Components – Easy to extend and customize
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📊 Dashboard Components
+# Summary Cards – Key metrics (Total Sales, Orders, Customers, Revenue)
 
-## Expanding the ESLint configuration
+# Sales & Revenue Charts – Line/Bar charts for trend analysis
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Recent Orders – Table of latest transactions
+
+# Top Products – Best-selling items with sales volume
+
+# Customer Statistics – Doughnut chart for customer segmentation
+
+## 🛠 Technologies Used
+# Frontend: React.js, Vite
+
+# Charts: Chart.js
+
+# Styling: CSS Modules / TailwindCSS 
+
+# State Management: React Hooks
+
+# Routing: React Router 
+
+## 📂 Project Structure
+
+# src/  
+├── components/  
+    ├── Sign/Login        # Sign up & Login page
+│   ├── Cards/           # Summary cards (Sales, Orders, etc.)  
+│   ├── Chart/           # Sales & revenue charts  
+│   ├── RecentOrders/    # Latest orders table  
+│   ├── TopProducts/     # Best-selling products  
+│   └── CustomersStatistics/ # Customer analytics  
+├── App.jsx             # Main app layout  
+└── main.jsx           # React entry point  

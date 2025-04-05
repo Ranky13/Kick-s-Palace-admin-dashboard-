@@ -1,13 +1,14 @@
 .recent-orders {
     flex: 1;
-    background-color: white;
+    background: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   }
   
   .recent-orders h3 {
-    color: #2c3e50;
+    color: #61db61;
     margin-bottom: 20px;
   }
   
@@ -24,13 +25,14 @@
   
   .recent-orders th {
     font-size: 14px;
-    color: #7f8c8d;
-    font-weight: 500;
+    color: #61db61;
+    font-weight: bold;
+    background: #eee;
   }
   
   .recent-orders td {
     font-size: 14px;
-    color: #2c3e50;
+    color: #313030;
   }
   
   .status {
@@ -53,4 +55,8 @@
   .status-pending {
     background-color: #fdedec;
     color: #e74c3c;
+  }
+  .status-failed {
+    background-color: #f16f6f;
+    color: white;
   }

@@ -1,8 +1,11 @@
 import React from 'react';
 import './Chart.css';
+import { Chart, registerables } from 'chart.js';
+import { useEffect, useRef } from 'react';
 
-function Charts() {
-  // Sample data for the chart
+
+
+const Charts = () => {
   const salesData = {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
     datasets: [

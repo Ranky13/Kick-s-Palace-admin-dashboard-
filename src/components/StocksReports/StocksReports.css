@@ -1,0 +1,46 @@
+.stockReports{
+    flex: 1;
+    background: white;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.stock-headings{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.stock-headings h3{
+    color: #61db61;
+}
+.stock-headings p{
+    color: #4189f5;
+    cursor: pointer;
+}
+.stocks p{
+    font-weight: bold;
+}
+.price h3{
+    color: #3a8d3a;
+}
+.stockReports table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.stockReports th, .stockReports td{
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+.stockReports th{
+    font-size: 14px;
+    font-weight: bold;
+    color: #61db61;
+}
+.stockReports table thead {
+    background: #eee;
+}
+.stockReports tbody tr{
+    font-weight: bold;
+}
