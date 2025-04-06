@@ -1,6 +1,5 @@
 import React from 'react';
-import { 
-  MdAttachMoney, MdShoppingCart, MdPeople, MdInventory, MdLocalShipping } from 'react-icons/md';
+import { MdAttachMoney, MdShoppingCart, MdPeople, MdInventory, MdGroups, MdLocalShipping, } from 'react-icons/md';
 import './Cards.css';
 
 function Cards() {
@@ -9,31 +8,31 @@ function Cards() {
     title: "Total Sales", 
     value: "$12,345", 
     change: "+12%", 
-    icon: <MdAttachMoney size={20} className="text-green-500" /> 
+    icon: <MdAttachMoney size={40} className="text-green-500" /> 
   },
   { 
     title: "Total Orders", 
     value: "1,234", 
     change: "+5%", 
-    icon: <MdShoppingCart size={20} className="text-blue-500" /> 
+    icon: <MdShoppingCart size={40} className="text-blue-500" /> 
   },
   { 
     title: "Total Customers", 
     value: "5,678", 
     change: "+8%", 
-    icon: <MdPeople size={20} className="text-purple-500" /> 
+    icon: <MdPeople size={40} className="text-purple-500" /> 
   },
   { 
     title: "Total Products", 
     value: "1,024", 
     change: "+3%", 
-    icon: <MdInventory size={20} className="text-orange-500" /> 
+    icon: <MdInventory size={40} className="text-orange-500" /> 
   },
   { 
     title: "Current Orders", 
     value: "93", 
     change: "-9%", 
-    icon: <MdLocalShipping size={20} className="text-red-500" /> 
+    icon: <MdLocalShipping size={40} className="text-red-500" /> 
   }
   ];
 
@@ -42,7 +41,7 @@ function Cards() {
       {cardData.map((card, index) => (
         <div className="card" key={index}>
           <div className="card-icon">
-            <i className={card.icon}></i>
+            {card.icon}
           </div>
           <div className="card-info">
             <h3>{card.title}</h3>
@@ -55,7 +54,7 @@ function Cards() {
       ))}
       <div className="staffs">
         <div className="staff-icon">
-
+        <MdGroups size={40} className="text-indigo-500" />
         </div>
         <div className="staffs-number">
           <h4>Staffs</h4>

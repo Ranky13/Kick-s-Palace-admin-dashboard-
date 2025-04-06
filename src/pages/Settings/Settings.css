@@ -1,0 +1,177 @@
+.settings-page{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.settings-navbar{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: black;
+}
+.right-side{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+.icon{
+    cursor: pointer;
+    color: #3ad83a;
+}
+.search input{
+    flex: 2;
+    width: 150px;
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    color: #3ad83a;
+    background: white;
+}
+.search input:focus{
+    outline: none;
+}
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #3ad83a;
+}
+.general-settings{
+    flex: 2;
+    background: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.general-settings input, .general-settings select{
+    width: 100%;
+    border: 2px solid #eee;
+    padding: 10px;
+}
+.general-settings input:focus{
+    outline: none;
+}
+
+
+.store-settings, .customers-settings{
+    flex: 2;
+    background: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.store-settings input, .store-settings select{
+    width: 100%;
+    border: 2px solid #eee;
+    padding: 10px;
+}
+.store-settings input:focus{
+    outline: none;
+}
+.localization-settings{
+    flex: 2;
+    background: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.localization-settings input, .localization-settings select{
+    width: 100%;
+    border: 2px solid #eee;
+    padding: 10px;
+}
+.localization-settings input:focus{
+    outline: none;
+}
+.botoms-column{
+    display: flex;
+    gap: 20px;
+}
+.categories-settings, .review-settings, .vouchers-settings, .tax-settings{
+    flex: 2;
+    background: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.categories-settings input, .categories-settings select, .review-settings input, .review-settings select, .guest-reviews input, .guest-reviews select, .vouchers-settings input, .vouchers-settings select, .tax-settings input, .tax-settings select{
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    padding: 10px;
+}
+input, select{
+    border-radius: 10px;
+    border: 2px solid #eee;
+    padding: 10px;
+    width: 100%;
+}
+input:focus{
+    outline: none;
+}
+select:focus{
+    outline: 1px solid #3ad83a;
+}
+.store-settings input:focus{
+    outline: none;
+}
+.review-settings{
+    display: block;
+}
+.customers-settings{
+    align-items: baseline;
+}
+.change-settings-buttons{
+    float: right;
+    display: flex;
+    gap: 15px;
+}
+.save{
+    
+    background: #83f583;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+}
+.cancel{
+    background: rgb(243, 70, 70);
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+}
+.customer-flex{
+    display: flex;
+    gap: 30px;
+}
+.change-settings-buttons button:hover{
+  transform: scale(1.1);  
+}
+.cancel:hover{
+    background: red;
+}
+.save:hover{
+    background: #3ad83a;
+}
+.max-login select{
+    width: 50%;
+}
+.title{
+    display: flex;
+    gap: 10px;
+}

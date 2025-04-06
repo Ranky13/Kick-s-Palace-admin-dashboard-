@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom'; 
+import { Routes, Route, useLocation } from 'react-router-dom'; 
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import Dashboard from './pages/Dashboard/Dashboard';
@@ -15,25 +15,29 @@ import Profile from './pages/profile/profile';
 import './App.css';
 
 function App() {
+  const location = useLocation();
+  const hideHeaderPaths = ['/profile', '/settings', '/discounts', '/analytics', '/products', '/customers', '/OrderManagements', '/UserManagements', '/Invoice'];
+
+  const shouldShowHeader = !hideHeaderPaths.includes(location.pathname);
+
   return (
     <div className="dashboard">
       <Sidebar />
       <div className="main-content">
-        <Header />
+        {shouldShowHeader && <Header />}
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/products" element={< Products />} />
-          <Route path="/customers" element={< Customers />} />
-          <Route path="/analytics" element={< Analytics />} />
-          <Route path="/discounts" element={< Discounts />} />
-          <Route path="/settings" element={< Settings />} />
-          <Route path="/OrderManagements" element={< OrderManagements />} />
-          <Route path="/UserManagements" element={< UserManagements />} />
-          <Route path="/Invoice" element={ < Invoices />} />
-          <Route path="/Profile" element={< Profile />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/customers" element={<Customers />} />
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/discounts" element={<Discounts />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/OrderManagements" element={<OrderManagements />} />
+          <Route path="/UserManagements" element={<UserManagements />} />
+          <Route path="/Invoice" element={<Invoices />} />
+          <Route path="/Profile" element={<Profile />} />
         </Routes>
       </div>
-      
     </div>
   );
 }

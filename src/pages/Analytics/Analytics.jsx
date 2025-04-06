@@ -1,12 +1,17 @@
 import React from 'react';
+import Cards from '../../components/Cards/Cards';
+import './Analytics.css';
+
 
 function Analytics() {
   return (
     <div className="analytics-page">
-      <h2>Business Analytics</h2>
-      <div className="analytics-content">
-        <p>Detailed reports and business insights.</p>
-        {/* Add your charts and analytics components here */}
+      <div className="navBar">
+        <h2>Business Analytics</h2>
+      </div>
+      <div className="card-widget">
+        < Cards />
+
       </div>
     </div>
   );

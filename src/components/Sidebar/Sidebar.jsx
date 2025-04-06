@@ -23,7 +23,7 @@ function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to="/products" className='nav-link'>GI
+            <Link to="/products" className='nav-link'>
             <MdShoppingCart size={20} className="icon" />
             <span>Products</span>
             </Link>
