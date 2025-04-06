@@ -34,6 +34,31 @@ A modern, responsive Admin Dashboard for e-commerce management, built with React
 
 ## 📂 Project Structure
 
+# 📊 Dashboard Components
+ Summary Cards – Key metrics (Total Sales, Orders, Customers, Revenue)
+
+ Sales & Revenue Charts – Line/Bar charts for trend analysis
+
+ Recent Orders – Table of latest transactions
+
+ Top Products – Best-selling items with sales volume
+
+ Customer Statistics – Doughnut chart for customer segmentation
+
+# 🛠 Technologies Used
+ Frontend: React.js, Vite
+
+ Charts: Chart.js
+
+ Styling: CSS Modules / TailwindCSS 
+
+# State Management: React Hooks
+
+ Routing: React Router 
+
+# 📂 Project Structure
+
+
 # src/  
 ├── components/  
     ├── Sign/Login        # Sign up & Login page
@@ -43,4 +68,5 @@ A modern, responsive Admin Dashboard for e-commerce management, built with React
 │   ├── TopProducts/     # Best-selling products  
 │   └── CustomersStatistics/ # Customer analytics  
 ├── App.jsx             # Main app layout  
+└── main.jsx           # React entry point  
 └── main.jsx           # React entry point  
