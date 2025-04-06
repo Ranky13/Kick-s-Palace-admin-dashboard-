@@ -37,6 +37,7 @@
   padding: 0;
   margin: 0;
   font-weight: bold;
+  gap: 15px;
 }
 .menu ul li:hover{
   background: #3ad83a;
@@ -58,6 +59,24 @@
 
 .menu li a:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 12px; 
+  padding: 10px 15px; 
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #f5f5f5;
+}
+
+.icon {
+  flex-shrink: 0; 
 }
 
 .menu li a i {

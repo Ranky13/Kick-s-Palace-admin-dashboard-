@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { MdHome, MdShoppingCart, MdSettings,MdBarChart, MdDiscount, MdShoppingBag, MdPeople, MdReceipt, MdPerson,} from 'react-icons/md';
 import './Sidebar.css';
 
 function Sidebar() {
@@ -16,63 +17,63 @@ function Sidebar() {
       <nav className="menu">
         <ul>
           <li>
-            <Link to="/">
-              <i className="fas fa-home"></i>
+            <Link to="/" className="nav-link">
+            <MdHome size={20} className="icon" />
               <span>Dashboard</span>
             </Link>
           </li>
           <li>
-            <Link to="/products">
-              <i className="fas fa-shopping-cart"></i>
-              <span>Products</span>
+            <Link to="/products" className='nav-link'>GI
+            <MdShoppingCart size={20} className="icon" />
+            <span>Products</span>
             </Link>
           </li>
           <li>
-            <Link to="/customers">
-              <i className="fas fa-users"></i>
-              <span>Customers</span>
+            <Link to="/customers" className="nav-link">
+            <MdPeople size={20} className="icon" />
+            <span>Customers</span>
             </Link>
           </li>
           <li>
-            <Link to="/analytics">
-              <i className="fas fa-chart-line"></i>
-              <span>Analytics</span>
+            <Link to="/analytics" className="nav-link">
+            <MdBarChart size={20} className="icon" />
+            <span>Analytics</span>
             </Link>
           </li>
           <li>
-            <Link to="/discounts">
-              <i className="fas fa-tag"></i>
-              <span>Discounts</span>
+            <Link to="/discounts" className="nav-link">
+            <MdDiscount size={20} className="icon" />
+            <span>Discounts</span>
             </Link>
           </li>
           <li>
-            <Link to="/OrderManagements">
-              <i className="fas fa-tag"></i>
+            <Link to="/OrderManagements" className="nav-link">
+            <MdShoppingBag size={20} className="icon" />
               <span>Order Managements</span>
             </Link>
           </li>
           <li>
-            <Link to="/UserManagements">
-              <i className="fas fa-tag"></i>
+            <Link to="/UserManagements" className="nav-link">
+            <MdPeople size={20} className="icon" />
               <span>User Managements</span>
             </Link>
           </li>
           <li>
-            <Link to="/Invoice">
-              <i className="fas fa-tag"></i>
-              <span>Invoices</span>
+            <Link to="/Invoice" className="nav-link">
+            <MdReceipt size={20} className="icon" />
+            <span>Invoices</span>
             </Link>
           </li>
           <li>
-            <Link to="/Profile">
-              <i className="fas fa-tag"></i>
+            <Link to="/Profile" className="nav-link">
+            <MdPerson size={20} className="icon" />
               <span>Profile</span>
             </Link>
           </li>
           <li>
-            <Link to="/settings">
-              <i className="fas fa-tag"></i>
-              <span>Settings</span>
+            <Link to="/settings" className="nav-link">
+            <MdSettings size={20} className="icon" />
+            <span>Settings</span>
             </Link>
           </li>
         </ul>
