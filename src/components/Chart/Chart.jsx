@@ -7,6 +7,7 @@ import { useEffect, useRef } from 'react';
 
 const Charts = () => {
   const salesData = {
+    type: 'line',
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
     datasets: [
       {

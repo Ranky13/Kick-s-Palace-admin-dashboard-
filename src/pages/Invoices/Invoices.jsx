@@ -82,11 +82,15 @@ const Invoices = () => {
             <tbody>
                 {invoices.map((invoice, id) => (
                     <tr key={id}>
-                        <td className="invoiceNumber">{invoice.id}</td>
-                        <td>{invoice.name}</td>
-                        <td>{invoice.date}</td>
-                        <td>${invoice.total}</td>
-                        <td><span className={`status ${getStatusClass(invoice.status)}`}>{invoice.status}</span></td>                  
+                        <td data-label="ID" className='invoiceNumber'>{invoice.id}</td>
+                        <td data-label="Name">{invoice.name}</td>
+                        <td data-label="Date">{invoice.date}</td>
+                        <td data-label="Total">${invoice.total}</td>
+                        <td data-label="Status">
+                          <span className={`status ${getStatusClass(invoice.status)}`}>
+                            {invoice.status}
+                          </span>
+                        </td>                 
                 </tr>
                 
               ))}

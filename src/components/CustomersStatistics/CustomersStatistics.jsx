@@ -9,7 +9,7 @@ Chart.register(...registerables);
 
 const CustomersStatistics = () => {
     const chartRef = useRef(null);
-    const chartInstance = useRef(null); // Store chart instance reference
+    const chartInstance = useRef(null); 
 
     useEffect(() => {
         if (chartRef.current) {
@@ -20,7 +20,7 @@ const CustomersStatistics = () => {
                 chartInstance.current.destroy();
             }
             
-            // Create new chart and store the instance
+            
             chartInstance.current = new Chart(ctx, {
                 type: 'pie',
                 data: {
@@ -63,7 +63,7 @@ const CustomersStatistics = () => {
                 chartInstance.current = null;
             }
         };
-    }, []); // Empty dependency array means this runs once on mount
+    }, []); 
 
     return (
         <div className='Customers-statistics'>

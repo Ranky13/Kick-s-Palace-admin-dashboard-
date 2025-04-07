@@ -212,11 +212,14 @@ function Settings() {
       <input type="radio" />
     </div>
   </form>
+  
   <div className="max-login">
-    <label htmlFor="">Maximum login Attempt</label>
-    <select name="" id="">
-      <option value="">1 hour</option>
-    </select>
+  <div className="max-selection">
+      <label htmlFor="">Maximum login Attempt</label>
+        <select name="" id="">
+          <option value="">1 hour</option>
+        </select>
+  </div>
   </div>
 </div>
 

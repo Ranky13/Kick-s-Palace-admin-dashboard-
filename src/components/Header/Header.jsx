@@ -16,7 +16,7 @@ function Header() {
         </div>
         <div className="user-profile">
           <div className="Avatar">
-          <img src="https://via.placeholder.com/40" alt="User" />
+          <img src="" alt="User" />
           </div>
           <span>Admin</span>
         </div> 
