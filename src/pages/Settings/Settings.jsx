@@ -7,26 +7,6 @@ function Settings() {
     <div className="settings-page">
       <div className="settings-navbar">
           <h2>Store Settings</h2>
-          <div className="right-side">
-            <div className="notifications">
-            <MdNotifications size={25} className='icon' />
-            </div>
-            <div className="settings">
-            <MdSettings size={25} className='icon' />
-            </div>
-            <div className="theme">
-
-            </div>
-            <div className="time-icon">
-              <MdTimer size={25} className='icon' />
-            </div>
-            <div className="avatar">
-              <img src="" alt="" />
-            </div>
-            <div className="search">
-              <span><MdSearch size={25} className='icon' /><input type="text"/></span>
-            </div>
-          </div>
       </div>
 
       <div className="general-settings">

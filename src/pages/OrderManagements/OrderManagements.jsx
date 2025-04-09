@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdSearch } from 'react-icons/md';
 import './OrderManagements.css';
 
 const OrderManagements = () => {
@@ -36,8 +37,6 @@ const OrderManagements = () => {
     <div className='Order-Managements'>
       <div className="order-navbar">
         <h2>Orders</h2>
-        <input type="text" placeholder='search' />
-        <div className="notification-icon"></div>
       </div>
 
       <div className="order-top-bar">
@@ -52,11 +51,14 @@ const OrderManagements = () => {
                 <option value="">10</option>
               </select>
             </div>
-            <div className="ordersearch">
-              <input type="text" placeholder='search' />
-            </div>
+            <div className="search-box">
+          <input type="text" placeholder="Search..." />
+          <button>
+            <MdSearch size={20}/>
+          </button>
         </div>
-          o<div className="order-Actions">
+        </div>
+          <div className="order-Actions">
             <button>Actions</button>
           </div>
       </div>

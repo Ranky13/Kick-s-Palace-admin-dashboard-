@@ -25,7 +25,7 @@ const TopProductsPerformance = () => {
                         labels: ['Nike', 'Puma', 'New Balance', 'Reebok', 'Louis Vulton', 'Boots'],
                         datasets: [
                             {
-                                lable: 'Sales',
+                                label: 'Sales',
                                 data: [5000, 8000, 6000, 9000, 10000, 10000],
                                 backgroundColor: 'rgba(52, 152, 219, 0.2)',
                                 borderColor: 'rgba(52, 152, 219, 1)',
@@ -34,16 +34,16 @@ const TopProductsPerformance = () => {
                                 fill: true
                             },
                             {
-                                lable: 'Revenue',
+                                label: 'Revenue',
                                 data: [4000, 6000, 8000, 3000, 12000, 8000],
-                                backgroundColor: 'rgb(25, 168, 6)',
+                                backgroundColor: '#19a806',
                                 borderColor: 'rgb(9, 114, 5)',
                                 borderWidth: 2,
                                 tension: 0.4,
                                 fill: true
                             },
                             {
-                                lable: 'Profits',
+                                label: 'Profits',
                                 data: [5000, 5000, 6500, 9500, 2000, 10000],
                                 backgroundColor: 'rgb(29, 219, 203)',
                                 borderColor: 'rgb(71, 226, 200)',
@@ -75,7 +75,7 @@ const TopProductsPerformance = () => {
     
   return (
     <div className='ProductsPerformance'>
-        <h2>Revenue vs Target</h2>
+        <h2>Products Performance</h2>
         <canvas ref={PerformanceChartRef} />
     </div>
   )

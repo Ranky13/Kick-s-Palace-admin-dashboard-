@@ -2,9 +2,11 @@ import React from 'react';
 
 function Products() {
   return (
-    <div className="content">
-      <h2>Products Page</h2>
-      <p>This is where you manage your products.</p>
+    <div className="Product-Page">
+      <div className="product-header">
+      <h2>Products </h2>
+      </div>
+      
     </div>
   );
 }

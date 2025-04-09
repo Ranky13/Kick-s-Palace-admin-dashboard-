@@ -56,4 +56,12 @@
   .Avatar img {
     border-radius: 50%;
   }
- 
+
+ .icons{
+  color: #3ad83a;
+  font-size: 30px;
+  background: #eee;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+ }

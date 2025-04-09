@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdSearch } from 'react-icons/md';
 import './Invoices.css'
 const Invoices = () => {
 
@@ -38,14 +39,7 @@ const Invoices = () => {
 
   return (
     <div className='invoice-container'>
-      <div className="navbar">
-        <h2>Invoices</h2>
-        <input type="text" placeholder='search' />
-        <div className="notification-icon"></div>
-        <div className="create-invoice">
-          <button>Create Invoice</button>
-        </div>
-      </div>
+     
       
       <div className="top-bar">
         <div className="sort-by">
@@ -59,9 +53,12 @@ const Invoices = () => {
                 <option value="">10</option>
               </select>
             </div>
-            <div className="search">
-              <input type="text" placeholder='search' />
-            </div>
+           <div className="search-box">
+              <input type="text" placeholder="Search..." />
+              <button>
+                <MdSearch size={20}/>
+              </button>
+              </div>
         </div>
           <div className="Actions">
             <button>Actions</button>

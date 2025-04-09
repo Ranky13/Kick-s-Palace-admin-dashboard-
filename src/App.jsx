@@ -12,19 +12,23 @@ import OrderManagements from './pages/OrderManagements/OrderManagements';
 import Invoices from './pages/Invoices/Invoices';
 import UserManagements from './pages/UserManagements/UserManagements';
 import Profile from './pages/profile/profile';
+import ProductList from './pages/Products/productList';
+import ProductGrid from './pages/Products/productgrid';
+import AddNewProduct from './pages/Products/AddNewProduct';
 import './App.css';
 
 function App() {
   const location = useLocation();
-  const hideHeaderPaths = ['/profile', '/settings', '/discounts', '/analytics', '/products', '/customers', '/OrderManagements', '/UserManagements', '/Invoice'];
+  // const hideHeaderPaths = ['/profile', '/settings', '/discounts', '/analytics', '/products', '/customers', '/OrderManagements', '/UserManagements', '/Invoice'];
 
-  const shouldShowHeader = !hideHeaderPaths.includes(location.pathname);
+  // const shouldShowHeader = !hideHeaderPaths.includes(location.pathname);
 
   return (
     <div className="dashboard">
       <Sidebar />
       <div className="main-content">
-        {shouldShowHeader && <Header />}
+        {/* {shouldShowHeader && <Header />} */}
+        <Header/>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/products" element={<Products />} />
@@ -36,6 +40,9 @@ function App() {
           <Route path="/UserManagements" element={<UserManagements />} />
           <Route path="/Invoice" element={<Invoices />} />
           <Route path="/Profile" element={<Profile />} />
+          <Route path='/productlist' element={< ProductList/>} />
+          <Route path='/productgrid' element={< ProductGrid/>} />
+          <Route path='/addNewproduct' element={< AddNewProduct/>} />
         </Routes>
       </div>
     </div>

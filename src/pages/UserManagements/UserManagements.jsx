@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdSearch } from 'react-icons/md';
 import './UserManagements.css';
 
 const UserManagements = () => {
@@ -31,8 +32,6 @@ const UserManagements = () => {
     <div className='UserManagements-container'>
       <div className="user-navbar">
         <h2>Users</h2>
-        <input type="text" placeholder='search' />
-        <div className="notification-icon"></div>
         <div className="user-Actions">
             <button>Add User</button>
         </div>
@@ -42,9 +41,12 @@ const UserManagements = () => {
         <div className="user-numbers">
           <h4>Total of 20 users are listed</h4>
         </div>
-        <div className="top-bar-search">
-          <input type="text"  placeholder="search for user's profile" />
-            </div>
+        <div className="search-box">
+          <input type="text" placeholder="Search..." />
+          <button>
+            <MdSearch size={20}/>
+          </button>
+        </div>
       </div>
 
       <div className="user-cards">

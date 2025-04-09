@@ -19,7 +19,7 @@ const RevenueChart = () => {
               }
 
               RevenueChartInstance.current = new Chart(ctx, {
-                type: 'bar',
+                type: 'line',
                 data: {
                 labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
                 datasets: [
@@ -27,18 +27,16 @@ const RevenueChart = () => {
                     label: 'Actual Revenue',
                     data: [12500, 14000, 16800, 18200, 19500, 21300, 22700, 24500, 26300, 28400, 30200, 32500],
                     borderColor: '#4BC0C0',
-                    backgroundColor: 'rgba(75, 192, 192, 0.1)',
+                    backgroundColor: '#4bc0c0',
                     borderWidth: 3,
                     tension: 0.3,
-                    fill: true
                   },
                   {
                     label: 'Target Sales',
                     data: [15000, 15500, 16500, 18000, 19500, 21000, 22500, 24000, 25500, 27000, 28500, 30000],
-                    borderColor: '#FF6384',
-                    backgroundColor: 'transparent',
+                    borderColor: 'green',
+                    backgroundColor: '#19a806',
                     borderWidth: 2,
-                    borderDash: [5, 5],
                     tension: 0.1
                   }
                 ]

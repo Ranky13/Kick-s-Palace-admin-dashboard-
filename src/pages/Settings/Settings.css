@@ -5,20 +5,11 @@
     flex-direction: column;
     gap: 30px;
 }
+
 .settings-navbar{
-    background: white;
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    color: black;
+    margin-top: 20px;
 }
-.right-side{
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    align-items: center;
-}
+
 .icon{
     cursor: pointer;
     color: #3ad83a;

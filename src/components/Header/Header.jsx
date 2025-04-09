@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import { MdSearch, MdLightMode, MdDarkMode, MdNotifications, MdMessage, MdSettings, MdTimer } from 'react-icons/md';
 
 function Header() {
   return (
@@ -11,8 +12,24 @@ function Header() {
         <div className="search-box">
           <input type="text" placeholder="Search..." />
           <button>
-            <i className="fas fa-search"></i>
+            <MdSearch size={20}/>
           </button>
+        </div>
+        <div className="theme"> 
+          <MdLightMode className='icons'/>
+
+        </div>
+        <div className="notification">
+            <MdNotifications className='icons'/>
+        </div>
+        <div className="settings">
+            <MdSettings className='icons'/>
+        </div>
+        <div className="time-icon">
+              <MdTimer className='icons' />
+            </div>
+        <div className="message">
+          <MdMessage className='icons'/>
         </div>
         <div className="user-profile">
           <div className="Avatar">
@@ -20,6 +37,7 @@ function Header() {
           </div>
           <span>Admin</span>
         </div> 
+        
       </div>
     </header>
   );

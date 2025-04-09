@@ -63,10 +63,10 @@ body{
 .left-option select, .middle-option select{
     font-weight: bold;
 }
-.search input:focus{
+.search-box input:focus{
     outline: none;
 }
-.search input::placeholder{
+.search-box input::placeholder{
     font-weight: bold;
 }
 .Actions button{

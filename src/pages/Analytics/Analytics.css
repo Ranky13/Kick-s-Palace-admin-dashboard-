@@ -1,12 +1,69 @@
-.analytics-page{
+.analytics-page {
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
 }
-.revenue-chart{
+
+.navBar {
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-widget {
     flex: 2;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.revenue-chart {
     display: flex;
     gap: 20px;
+    height: fit-content;
 }
+
+/* Chart container styles */
+.RevenueCharts, .ProductsPerformance {
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.RevenueCharts .revenue, 
+.ProductsPerformance {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.RevenueCharts h2, 
+.ProductsPerformance h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.RevenueCharts canvas, 
+.ProductsPerformance canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+@media (max-width: 768px) {
+    .revenue-chart {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .RevenueCharts, .ProductsPerformance {
+      height: 300px;
+      margin-bottom: 20px;
+    }
+  }
