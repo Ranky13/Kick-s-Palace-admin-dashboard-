@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdSearch, MdNotifications, MdTimer, MdSettings, MdPerson, MdStore, MdLocationCity, MdCategory, MdReviews, MdCardGiftcard, MdPeople, MdLocalTaxi } from 'react-icons/md';
+import { MdSearch, MdNotifications, MdTimer, MdSettings, MdPerson, MdStore, MdLocationCity, MdCategory, MdReviews, MdCardGiftcard, MdPeople, MdLocalTaxi, MdMoney } from 'react-icons/md';
 import './Settings.css';
 
 function Settings() {
@@ -25,7 +25,6 @@ function Settings() {
               <option value="">Default</option>
             </select>
           </div>
-          <label htmlFor="">Default</label>
           <label htmlFor="">Description</label>
           <input type="text" placeholder='Enter Description'/>
         </form>
@@ -34,7 +33,7 @@ function Settings() {
       <div className="store-settings">
       <div className="title">
             <MdStore size={25} className='icon' />
-            <span><h4>Store Settings</h4></span>
+            <h4>Store Settings</h4>
           </div>
         <form action="">
             <label htmlFor="">Store Name</label>
@@ -128,7 +127,7 @@ function Settings() {
 
         <div className="tax-settings">
         <div className="title">
-          <MdLocalTaxi size={25} className='icon' />
+          <MdMoney size={25} className='icon' />
           <span><h4>Tax Settings</h4></span>
         </div>
           <form action="">

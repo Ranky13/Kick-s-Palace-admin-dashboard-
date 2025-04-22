@@ -3,19 +3,11 @@ body{
 }
 .Order-Managements{
     flex: 2;
-    padding: 10px;
+    padding: 30px;
 }
-.order-navbar{
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    backdrop-filter: blur(10px);
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
+
 .order-navbar h2{
-    margin-left: 30px;
-    margin-right: 20px;
+    margin-bottom: 30px;
 }
 .order-navbar input{
     flex: 2;

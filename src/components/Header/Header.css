@@ -28,7 +28,7 @@
   }
   
   .search-box input {
-    border: none;
+    border: 2px;
     background: transparent;
     outline: none;
     padding: 5px;
@@ -64,4 +64,13 @@
   border-radius: 50%;
   padding: 5px;
   cursor: pointer;
+ }
+ .theme{
+  width: fit-content;
+  height: fit-content;
+  background: #eee;
+  border-radius: 50px;
+  align-items: center;
+  padding: 4px;
+  justify-content: center;
  }

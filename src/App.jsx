@@ -10,6 +10,7 @@ import Discounts from './pages/Discounts/Discounts';
 import Settings from './pages/Settings/Settings';
 import OrderManagements from './pages/OrderManagements/OrderManagements';
 import Invoices from './pages/Invoices/Invoices';
+import Reviews from './components/Reviews/Reviews';
 import UserManagements from './pages/UserManagements/UserManagements';
 import Profile from './pages/profile/profile';
 import ProductList from './pages/Products/productList';
@@ -36,10 +37,11 @@ function App() {
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/discounts" element={<Discounts />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/OrderManagements" element={<OrderManagements />} />
-          <Route path="/UserManagements" element={<UserManagements />} />
+          <Route path="/orderManagements" element={<OrderManagements />} />
+          <Route path="/userManagements" element={<UserManagements />} />
           <Route path="/Invoice" element={<Invoices />} />
-          <Route path="/Profile" element={<Profile />} />
+          <Route path='/reviews' element={<Reviews/>}/>
+          <Route path="/profile" element={<Profile />} />
           <Route path='/productlist' element={< ProductList/>} />
           <Route path='/productgrid' element={< ProductGrid/>} />
           <Route path='/addNewproduct' element={< AddNewProduct/>} />

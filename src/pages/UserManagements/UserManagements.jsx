@@ -59,7 +59,6 @@ const UserManagements = () => {
               <h3>{userr.userName}</h3>
               <p>{userr.role}</p>
               <button>{userr.action}</button>
-
             </div>
           </div>
         ))}

@@ -50,8 +50,16 @@
 .general-settings input:focus{
     outline: none;
 }
+h2{
+    color: #159115;
+}
+h4{
+    color: #159115;
+}
 
-
+label{
+    color: #3ad83a;
+}
 .store-settings, .customers-settings{
     flex: 2;
     background: white;

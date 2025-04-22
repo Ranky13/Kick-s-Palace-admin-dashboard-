@@ -17,6 +17,7 @@ function Header() {
         </div>
         <div className="theme"> 
           <MdLightMode className='icons'/>
+          <MdDarkMode className='icons'/>
 
         </div>
         <div className="notification">

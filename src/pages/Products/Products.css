@@ -1,0 +1,284 @@
+.Product-Page{
+    padding: 30px;
+}
+.product-header h2{
+    color: rgb(117, 116, 114);
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.navigation span{
+    color: rgb(109, 165, 248);
+}
+.button button{
+    background: #61db61;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+}
+.product-top-bar{
+    display: block;
+    background: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+.product-status{
+    display: flex;
+    gap: 30px;
+}
+.product-status h4{
+    border-bottom: 2px solid #61db61;
+    margin: 0px;
+}
+.second-block{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-search-box input{
+    flex: 2;
+    width: 600px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    background: white;
+}
+.product-search input:focus{
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+.Action-buttons{
+    display: flex;
+    gap: 10px;    
+}
+
+
+
+.Action-buttons > .clear{
+    background: red;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+}
+.export{
+    background: #61db61;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+}
+.productlist{
+    flex: 1;
+    background: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+}
+.productlist table{
+    width: 100%;
+    border-collapse: collapse;
+    color: #8a8686;
+}
+.productlist th, .productlist td{
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+.productlist th{
+    font-size: 14px;
+    color: #61db61;
+    font-weight: 500;
+    font-weight: bolder;
+    background: #eee;
+}
+.category{
+    color: #2ecc71;
+}
+.Img{
+    color: #2ecc71;
+    size: 40px;
+}
+
+.stock-status{
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+.low{
+    background-color: #fef9e7;
+    color: #f39c12;
+}
+.out-of-stock{
+    background-color: #fdedec;
+    color: #e74c3c;
+}
+.in-stock{
+    background-color: #d5f5e3;
+    color: #2ecc71;
+}
+.action-icon{
+    color: #61db61;
+    font-size: 30px;
+    display: flex;
+    gap: 30px;
+}
+.edit-button{
+    color: #2ecc71;
+    background: #aef3cb;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.delete-button{
+    background-color: #fdedec;
+    color: #e74c3c;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .productlist table, 
+    .productlist thead, 
+    .productlist tbody, 
+    .productlist th, 
+    .productlist td,
+    .second-block, 
+    .productlist tr { 
+      display: block; 
+    }
+    .product-search-box input{
+        flex: 1;
+    }
+    .productlist thead tr { 
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    
+    .productlist tr { 
+      border: 1px solid #ddd;
+      margin-bottom: 1rem;
+    }
+    
+    .productlist td { 
+      border: none;
+      border-bottom: 1px solid #eee; 
+      position: relative;
+      padding-left: 50%; 
+      text-align: right;
+    }
+    
+    .productlist td:before { 
+      content: attr(data-label);
+      position: absolute;
+      left: 1rem;
+      width: 45%; 
+      padding-right: 10px; 
+      font-weight: bold;
+      text-align: left;
+    }
+    .AddProduct-Page{
+        display: block;
+    }
+  }
+  /*-------------------------------------ADD NEW PRODUCTS STYLING----------------------------------*/
+
+  .AddProduct-Page{
+    padding: 30px;
+  }
+  .add-page-header{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .main-page{
+    display: flex;
+    gap: 20px;
+  }
+  .main-page h4{
+    color: #61db61;
+  }
+  .product-details{
+    height: 100%;
+    gap: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .product-img{
+    width: 100%;
+    height: 200px;
+    align-content: center;
+    cursor: pointer;
+  }
+  label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.seo label{
+    white-space: nowrap;
+}
+  textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: none;
+  }
+  textarea:focus{
+    outline: none;
+  }
+  .right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+  }
+  .right input{
+    width: 400px;
+    flex: 1;
+  }
+  .product-details, .properties, .seo, .pricing{
+    background: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .properties{
+    flex: 1;
+  }
+  .flex{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  input{
+    width: 100%;
+  }

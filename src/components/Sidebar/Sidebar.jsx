@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { 
   MdHome, MdShoppingCart, MdSettings, MdBarChart, 
-  MdDiscount, MdShoppingBag, MdPeople, MdReceipt, MdPerson, MdArrowDropDown, MdArrowRight, MdList, MdGridOn, MdAdd 
+  MdDiscount, MdShoppingBag, MdPeople, MdReceipt, MdPerson, MdArrowDropDown, MdArrowRight, MdList, MdGridOn, MdAdd, 
+  MdReviews
 } from 'react-icons/md';
 import './Sidebar.css';
 
@@ -90,6 +91,12 @@ function Sidebar() {
             <NavLink to="/Invoice" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
               <MdReceipt size={20} className="icon" />
               <span>Invoices</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/reviews" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+              <MdReviews size={20} className="icon" />
+              <span>Reviews</span>
             </NavLink>
           </li>
           <li>

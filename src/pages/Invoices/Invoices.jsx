@@ -88,7 +88,7 @@ const Invoices = () => {
                             {invoice.status}
                           </span>
                         </td>                 
-                </tr>
+                    </tr>
                 
               ))}
             </tbody>

@@ -1,0 +1,58 @@
+.reviewspage{
+    padding: 30px;
+}
+.reviewspage h3{
+    color: #3ad83a;
+}
+.review-container{
+    display: grid;
+    padding: 20px;
+    gap: 30px;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+}
+.reviews-cards{
+    position: relative;
+    background: white;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: block;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    line-height: 3;
+    border: 2px solid rgb(180, 179, 179);
+}
+.review-details{
+    padding: 15px;
+}
+.review-headline{
+    position: absolute;
+    top: 0%;
+    align-self: center;
+    margin-bottom: 20px;
+    color: #3ad83a;
+}
+.name-container{
+    background-color: #3ad83a;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+.customers-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #3ad83a;
+    background: white;
+    left: 20%;
+    bottom: 40%;
+    position: absolute;
+}
+.customer-reviews{
+    line-height: 2;
+    padding: 20px;
+    margin-top: 20px;
+}
+.ratings{
+    color: #3ad83a;
+}

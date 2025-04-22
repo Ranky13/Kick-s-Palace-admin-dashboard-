@@ -1,0 +1,18 @@
+.Customers-Performance{
+    background: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.Customers-Performance h2{
+    margin-bottom: 15px;
+    color: #159115;    
+    font-size: 1.5rem;
+}
+.Customers-Performance canvas{
+    max-width: 100%;
+    height: auto !important;
+}

@@ -2,6 +2,8 @@ import React from 'react';
 import Cards from '../../components/Cards/Cards';
 import TopProductsPerformance from '../../components/TopProductsPerformance/TopProductsPerformance';
 import RevenueChart from '../../components/RevenueChart/RevenueChart';
+import CustomerSegmentation from '../../components/CustomerSegmentation/CustomerSegmentation';
+import ChannelPerformance from '../../components/Channel Performance/ChannelPerformance';
 import './Analytics.css';
 
 function Analytics() {
@@ -17,6 +19,10 @@ function Analytics() {
         <div className="revenue-chart">
           <RevenueChart />
           <TopProductsPerformance />
+        </div>
+        <div className="middle-row">
+          <CustomerSegmentation/>
+          <ChannelPerformance/>
         </div>
       </div>
     </div>

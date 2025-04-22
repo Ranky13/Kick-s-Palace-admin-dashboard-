@@ -1,41 +1,142 @@
-
 .customers-page{
-    flex: 2;
-    padding: 10px;
+  padding: 30px;
 }
-.customer-navbar{
+
+.customers-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 23px;
+}
+.customers-Card{
+  background: white;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  max-width: 630px;
+}
+.customers-icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3498db20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2ecc71;
+  font-size: 20px;
+}
+.percentage{
+  display: flex;
+  justify-content: space-between;
+}
+.customers-card-info{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.C-negative{
+  color: #e74c3c;
+  border-radius: 5px;
+  padding: 3px;
+  background: #f5cec9;
+  border-radius: 5px;
+}
+.C-positive{
+  color: #2ecc71;
+  background: #c6f1d8;
+  border-radius: 5px;
+  padding: 3px;
+}
+.customers-lists{
+  flex: 1;
+  background: white;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+}
+.customers-lists h4{
+  margin-bottom: 20px;
+  color: #61db61;
+}
+.customers-lists table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.customers-lists th, .customers-lists td{
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+.customers-lists th{
+  font-size: 14px;
+  color: #61db61;
+  font-weight: 500;
+  font-weight: bolder;
+}
+.list-action{
+  font-size: 30px;
+  display: flex;
+  gap: 30px;
+}
+.visibility{
+  color: #2ecc71;
+  background: #aef3cb;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.messg{
+  background-color: #aee3f8;
+  color: #116a8d;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .customers-lists table, 
+  .customers-lists thead, 
+  .customers-lists tbody, 
+  .customers-lists th, 
+  .customers-lists td,
+  .customers-lists tr { 
+    display: block; 
+  }
+  
+  .customers-lists thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .customers-lists tr { 
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+  }
+  
+  .customers-lists td { 
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+    text-align: right;
+  }
+  
+  .customers-lists td:before { 
+    content: attr(data-label);
+    position: absolute;
+    left: 1rem;
+    width: 45%; 
+    padding-right: 10px; 
+    font-weight: bold;
+    text-align: left;
+  }
+  .list-action{
     display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    backdrop-filter: blur(10px);
-    margin-bottom: 20px;
-    margin-top: 20px;
+    gap: 20px;
   }
-.customer-navbar h2{
-    margin-left: 30px;
-    margin-right: 20px;
-}
-  .customer-navbar input{
-    flex: 2;
-    width: 600px;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    background: white;
-  }
-.customer-navbar input:focus{
-    outline: none;
-}
-.Add-customer button{
-    background:  #3ad83a;
-    padding: 15px;
-    width: 200px;
-    flex: 1;
-    border: none;
-    font-weight: 700;
-    color: white;
-    border-radius: 10px;
-}
-.Add-customer button:hover{
-    transform: scale(1.1);
 }

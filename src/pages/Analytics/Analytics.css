@@ -20,14 +20,13 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.revenue-chart {
+.revenue-chart, .middle-row{
     display: flex;
     gap: 20px;
     height: fit-content;
 }
 
-/* Chart container styles */
-.RevenueCharts, .ProductsPerformance {
+.RevenueCharts, .ProductsPerformance, .ChannelaPerformance{
     flex: 1;
     background: #fff;
     border-radius: 8px;
@@ -44,14 +43,10 @@
     flex-direction: column;
 }
 
-.RevenueCharts h2, 
-.ProductsPerformance h2 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #333;
-}
+
 
 .RevenueCharts canvas, 
+.ChannelaPerformance canvas,
 .ProductsPerformance canvas {
     width: 100% !important;
     height: 100% !important;
@@ -62,7 +57,7 @@
       height: auto;
     }
     
-    .RevenueCharts, .ProductsPerformance {
+    .RevenueCharts, .ProductsPerformance, .ChannelaPerformance {
       height: 300px;
       margin-bottom: 20px;
     }
